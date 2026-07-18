@@ -147,7 +147,7 @@ john --wordlist=/usr/share/wordlists/rockyou.txt hash
 
 ## 8. Ce conține Excel-ul
 
-Fișierul e o mină de aur: conturi, grupuri și notițe operaționale.
+conturi, grupuri și notițe operaționale.
 
 |Cont|Grup / Rol|Notă|
 |---|---|---|
