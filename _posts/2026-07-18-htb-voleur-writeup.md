@@ -89,7 +89,7 @@ nxc smb DC.voleur.htb -u ryan.naylor -p 'HollowOct31Nyt' -k --shares
 |ADMIN$ / C$|—|Standard|
 |Finance / HR|fără acces|De revizitat cu alte credențiale|
 |IPC$|READ|Standard|
-|**IT**|**READ**|⭐ Punctul nostru de plecare|
+|**IT**|**READ**| Punctul nostru de plecare|
 |NETLOGON / SYSVOL|READ|Standard|
 
 > **Lecție de metodologie:** orice acces READ pe un share cu nume "de business" (aici `IT`) e primul loc unde te uiți după fișiere de configurare, documente interne sau — jackpot — Excel-uri cu parole "temporare".
@@ -151,7 +151,7 @@ Fișierul e o mină de aur: conturi, grupuri și notițe operaționale.
 
 |Cont|Grup / Rol|Notă|
 |---|---|---|
-|**ryan.naylor**|SMB|⚠️ Kerberos Pre-Auth dezactivat temporar (testare sisteme legacy) → **AS-REP Roasting**|
+|**ryan.naylor**|SMB| Kerberos Pre-Auth dezactivat temporar (testare sisteme legacy) → **AS-REP Roasting**|
 |marie.bryant|SMB|—|
 |lacey.miller|Remote Management Users|Acces WinRM|
 |**todd.wolfe**|Remote Management Users|Cont de "leaver" — parolă resetată la `NightT1meP1dg3on14`, urma să fie șters|
