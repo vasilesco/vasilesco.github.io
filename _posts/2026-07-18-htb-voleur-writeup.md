@@ -412,7 +412,8 @@ svc_backup@voleur:~$ ls /mnt/c
 
 `/mnt/c` ne arată drive-ul `C:\` al Windows-ului montat direct în filesystem-ul Linux — semn clar de WSL.
 
-> **Analogie:** gândește-te la WSL ca la un apartament închiriat în interiorul aceleiași clădiri (DC-ul Windows) — are propria intrare (portul 2222, SSH), propriile chei (utilizatori Linux separați), dar pereții despărțitori sunt subțiri: din apartament poți vedea și umbla liber prin restul clădirii (`/mnt/c` = tot discul C: al Windows-ului). Practic, oricine intră pe ușa din spate (SSH/WSL) ajunge automat vizavi de toate fișierele Windows-ului găzduit.
+> **Analogie:** gândește-te la WSL ca la o cameră de hotel din interiorul aceleiași clădiri (Windows-ul care găzduiește totul) — camera are propria ușă cu cod (portul 2222, SSH), propriile chei (utilizatori Linux separați de cei Windows). Dar există o particularitate: din cameră ai acces liber la un depozit comun al hotelului unde sunt stocate toate lucrurile celorlalți oaspeți (/mnt/c = discul C: al Windows-ului, cu tot ce conține el).
+Practic, oricine obține cheia camerei (acces SSH la WSL) nu rămâne blocat doar acolo — poate ieși pe hol și umbla liber prin depozitul comun, adică prin tot sistemul Windows găzduit.
 
 Cu acest acces, explorăm sistemul de fișiere Windows montat, căutând orice ar semăna cu un backup:
 
