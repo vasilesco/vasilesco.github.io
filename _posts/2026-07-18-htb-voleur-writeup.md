@@ -47,7 +47,7 @@ Două detalii din scan care contează enorm mai târziu:
 
 ### 2.1 Generarea `krb5.conf`
 
-NetExec poate genera automat fișierul de configurare Kerberos, pe baza informațiilor pe care le adulmecă prin SMB:
+NetExec poate genera automat fișierul de configurare Kerberos, pe baza informațiilor pe care le identifică prin SMB:
 
 ```bash
 nxc smb DC.voleur.htb --generate-krb5-file voleur.htb
