@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "HTB Postman — Full Write-up"
-date: 2026-08-13
+date: 2026-08-12 20:00:00 +0000
 categories: [htb, linux]
 tags: [redis, webmin, rce, password-cracking, ssh]
 ---
