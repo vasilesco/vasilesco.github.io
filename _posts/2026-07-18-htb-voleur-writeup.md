@@ -47,7 +47,7 @@ Două detalii din scan care contează enorm mai târziu:
 
 ### 2.1 Generarea `krb5.conf`
 
-NetExec poate genera automat fișierul de configurare Kerberos, pe baza informațiilor pe care le adulmecă prin SMB:
+NetExec poate genera automat fișierul de configurare Kerberos, pe baza informațiilor pe care le identifică prin SMB:
 
 ```bash
 nxc smb DC.voleur.htb --generate-krb5-file voleur.htb
@@ -89,7 +89,7 @@ nxc smb DC.voleur.htb -u ryan.naylor -p 'HollowOct31Nyt' -k --shares
 |ADMIN$ / C$|—|Standard|
 |Finance / HR|fără acces|De revizitat cu alte credențiale|
 |IPC$|READ|Standard|
-|**IT**|**READ**|⭐ Punctul nostru de plecare|
+|**IT**|**READ**| Punctul nostru de plecare|
 |NETLOGON / SYSVOL|READ|Standard|
 
 > **Lecție de metodologie:** orice acces READ pe un share cu nume "de business" (aici `IT`) e primul loc unde te uiți după fișiere de configurare, documente interne sau — jackpot — Excel-uri cu parole "temporare".
@@ -147,11 +147,11 @@ john --wordlist=/usr/share/wordlists/rockyou.txt hash
 
 ## 8. Ce conține Excel-ul
 
-Fișierul e o mină de aur: conturi, grupuri și notițe operaționale.
+conturi, grupuri și notițe operaționale.
 
 |Cont|Grup / Rol|Notă|
 |---|---|---|
-|**ryan.naylor**|SMB|⚠️ Kerberos Pre-Auth dezactivat temporar (testare sisteme legacy) → **AS-REP Roasting**|
+|**ryan.naylor**|SMB| Kerberos Pre-Auth dezactivat temporar (testare sisteme legacy) → **AS-REP Roasting**|
 |marie.bryant|SMB|—|
 |lacey.miller|Remote Management Users|Acces WinRM|
 |**todd.wolfe**|Remote Management Users|Cont de "leaver" — parolă resetată la `NightT1meP1dg3on14`, urma să fie șters|
@@ -412,7 +412,8 @@ svc_backup@voleur:~$ ls /mnt/c
 
 `/mnt/c` ne arată drive-ul `C:\` al Windows-ului montat direct în filesystem-ul Linux — semn clar de WSL.
 
-> **Analogie:** gândește-te la WSL ca la un apartament închiriat în interiorul aceleiași clădiri (DC-ul Windows) — are propria intrare (portul 2222, SSH), propriile chei (utilizatori Linux separați), dar pereții despărțitori sunt subțiri: din apartament poți vedea și umbla liber prin restul clădirii (`/mnt/c` = tot discul C: al Windows-ului). Practic, oricine intră pe ușa din spate (SSH/WSL) ajunge automat vizavi de toate fișierele Windows-ului găzduit.
+> **Analogie:** gândește-te la WSL ca la o cameră de hotel din interiorul aceleiași clădiri (Windows-ul care găzduiește totul) — camera are propria ușă cu cod (portul 2222, SSH), propriile chei (utilizatori Linux separați de cei Windows). Dar există o particularitate: din cameră ai acces liber la un depozit comun al hotelului unde sunt stocate toate lucrurile celorlalți oaspeți (/mnt/c = discul C: al Windows-ului, cu tot ce conține el).
+Practic, oricine obține cheia camerei (acces SSH la WSL) nu rămâne blocat doar acolo — poate ieși pe hol și umbla liber prin depozitul comun, adică prin tot sistemul Windows găzduit.
 
 Cu acest acces, explorăm sistemul de fișiere Windows montat, căutând orice ar semăna cu un backup:
 
