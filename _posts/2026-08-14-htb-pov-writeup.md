@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "HTB Pov — Full Write-up"
-date: 2026-08-14 12:00:00 +0000
+date: 2026-08-14 08:00:00 +0000
 categories: [htb, windows, iis]
 tags: [viewstate-deserialization, ysoserial, path-traversal, dpapi, sedebugprivilege, meterpreter]
 ---
