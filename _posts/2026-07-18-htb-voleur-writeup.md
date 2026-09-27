@@ -7,8 +7,8 @@ tags: [kerberos, dpapi, kerberoasting, wsl]
 description: >-
   Lab de Active Directory: kerberoasting țintit, pivotare cu RunasCs, un cont șters readus la viață și vault-uri DPAPI, până la Domain Admin prin pass-the-hash.
 image:
-  path: /assets/img/avatar.webp
-  alt: placeholder
+  path: /assets/img/voleur/00-voleur-preview.png
+  alt: HTB Voleur preview
 ---
 **Target:** `10.129.232.130` (DC.voleur.htb) **Domeniu:** `voleur.htb` **Dificultate:** Medium (Active Directory)
 

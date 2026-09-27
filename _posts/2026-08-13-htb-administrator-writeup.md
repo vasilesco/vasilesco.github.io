@@ -7,8 +7,8 @@ tags: [acl-abuse, bloodhound, kerberoasting, dcsync, pass-the-hash, password-saf
 description: >-
   Assumed breach within an AD domain. GenericAll and ForceChangePassword chain into a Password Safe backup, then targeted Kerberoasting and DCSync to Domain Admin.
 image:
-  path: /assets/img/avatar.webp
-  alt: placeholder
+  path: /assets/img/administrator/00-administrator-preview.png
+  alt: HTB Administrator preview
 ---
 **Target:** 10.129.44.40 (HTB "Administrator")
 **OS:** Windows Server 2022 Build 20348 (Domain Controller, `administrator.htb`)

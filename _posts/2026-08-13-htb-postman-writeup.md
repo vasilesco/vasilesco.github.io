@@ -7,8 +7,8 @@ tags: [redis, webmin, rce, password-cracking, ssh]
 description: >-
   Unauthenticated Redis writes an SSH key for the foothold, an encrypted backup key gets cracked, and a Webmin RCE hands over root.
 image:
-  path: /assets/img/avatar.webp
-  alt: placeholder
+  path: /assets/img/postman/00-postman-preview.png
+  alt: HTB Postman preview
 ---
 **Target:** 10.129.2.1 (HTB "Postman")
 **OS:** Ubuntu 18.04.3 LTS
