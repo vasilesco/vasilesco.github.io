@@ -4,9 +4,12 @@ title: "HTB Media — Full Write-up"
 date: 2026-08-19 14:00:00 +0000
 categories: [htb, windows]
 tags: [file-upload, ntlm-theft, responder, hashcat, ssh, fullpowers, godpotato, privilege-escalation]
+description: >-
+  A hiring form eats a Windows Media Player file and leaks a hash. The upload folder becomes the webroot, and GodPotato gives SYSTEM.
+image:
+  path: /assets/img/media/00-media-preview.png
+  alt: HTB Media preview
 ---
-![HTB Media preview](/assets/img/media/00-media-preview.png)
-
 **Target:** 10.129.234.67 (HTB "Media")
 **OS:** Windows Server 2022, standalone — no domain in sight
 

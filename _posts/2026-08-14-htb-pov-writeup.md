@@ -4,9 +4,12 @@ title: "HTB Pov — Full Write-up"
 date: 2026-08-14 08:00:00 +0000
 categories: [htb, windows, iis]
 tags: [viewstate-deserialization, ysoserial, path-traversal, dpapi, sedebugprivilege, meterpreter]
+description: >-
+  ASP.NET ViewState deserialization gets RCE, stored credentials move us to a second user, and SeDebugPrivilege into a SYSTEM process finishes the job.
+image:
+  path: /assets/img/pov/01-pov-preview.png
+  alt: HTB Pov preview
 ---
-![HTB Pov preview](/assets/img/pov/01-pov-preview.png)
-
 **Target:** 10.129.230.183 (HTB "Pov")
 **OS:** Windows (IIS)
 

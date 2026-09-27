@@ -4,9 +4,12 @@ title: "HTB TombWatcher — Full Write-up"
 date: 2026-08-16 08:00:00 +0000
 categories: [htb, windows, active-directory]
 tags: [bloodhound, kerberoasting, acl-abuse, gmsa, adcs, esc1, esc3, pass-the-hash]
+description: >-
+  A long AD chain: targeted Kerberoasting, a gMSA secret, ACL abuse, reviving a deleted account, and ESC3 to get around a blocked ESC1.
+image:
+  path: /assets/img/tombwatcher/00-tombwatcher-preview.png
+  alt: HTB TombWatcher preview
 ---
-![HTB TombWatcher preview](/assets/img/tombwatcher/00-tombwatcher-preview.png)
-
 **Target:** 10.129.49.151 (HTB "TombWatcher")
 **OS:** Windows (Active Directory Domain Controller)
 

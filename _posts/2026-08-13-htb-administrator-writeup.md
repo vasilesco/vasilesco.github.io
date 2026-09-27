@@ -4,6 +4,11 @@ title: "HTB Administrator — Full Write-up"
 date: 2026-08-13 12:00:00 +0000
 categories: [htb, windows, active-directory]
 tags: [acl-abuse, bloodhound, kerberoasting, dcsync, pass-the-hash, password-safe]
+description: >-
+  Assumed breach within an AD domain. GenericAll and ForceChangePassword chain into a Password Safe backup, then targeted Kerberoasting and DCSync to Domain Admin.
+image:
+  path: /assets/img/avatar.webp
+  alt: placeholder
 ---
 **Target:** 10.129.44.40 (HTB "Administrator")
 **OS:** Windows Server 2022 Build 20348 (Domain Controller, `administrator.htb`)

@@ -4,9 +4,12 @@ title: "HTB Networked — Full Write-up"
 date: 2026-09-02 10:00:00 +0000
 categories: [htb, linux]
 tags: [file-upload-bypass, mime-sniffing, php, cron-injection, sudo, network-scripts, cve-2019-network-scripts]
+description: >-
+  GIF magic bytes smuggle PHP for the foothold, a cron job with an unsanitized exec() gives the user, and a sudo rule points at a network-scripts CVE for root.
+image:
+  path: /assets/img/networked/00-networked-preview.png
+  alt: HTB Networked preview
 ---
-![HTB Networked preview](/assets/img/networked/00-networked-preview.png)
-
 **Target:** 10.129.64.39 (HTB "Networked")
 **OS:** Linux (CentOS 7)
 

@@ -4,6 +4,11 @@ title: "HTB Voleur — Write-up complet"
 date: 2026-07-18
 categories: [htb, active-directory]
 tags: [kerberos, dpapi, kerberoasting, wsl]
+description: >-
+  Lab de Active Directory: kerberoasting țintit, pivotare cu RunasCs, un cont șters readus la viață și vault-uri DPAPI, până la Domain Admin prin pass-the-hash.
+image:
+  path: /assets/img/avatar.webp
+  alt: placeholder
 ---
 **Target:** `10.129.232.130` (DC.voleur.htb) **Domeniu:** `voleur.htb` **Dificultate:** Medium (Active Directory)
 

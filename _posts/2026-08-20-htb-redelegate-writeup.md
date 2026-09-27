@@ -4,9 +4,12 @@ title: "HTB Redelegate — Full Write-up"
 date: 2026-08-20 20:00:00 +0000
 categories: [htb, windows, active-directory]
 tags: [ftp, anonymous-login, keepass, hashcat, mssql, password-spray, bloodhound, forcechangepassword, constrained-delegation, protocol-transition, s4u2self, s4u2proxy, dcsync, pass-the-hash]
+description: >-
+  Anonymous FTP leaks a KeePass database, a password spray lands a foothold, and SeEnableDelegationPrivilege sets up a delegation abuse against the DC.
+image:
+  path: /assets/img/redelegate/00-redelegate-preview.png
+  alt: HTB Redelegate preview
 ---
-![HTB Redelegate preview](/assets/img/redelegate/00-redelegate-preview.png)
-
 **Target:** 10.129.234.50 (redelegate.vl)
 **OS:** Windows Server (Active Directory Domain Controller)
 
